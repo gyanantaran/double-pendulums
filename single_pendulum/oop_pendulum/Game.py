@@ -63,10 +63,10 @@ class Game( object ):
         pygame.quit()
 
     def on_execute( self ):
-        mass = float( input( "Enter the mass of the bob: " ) )
-        length = float( input( "\tlength of the pendulum: " ) )
-        theta = float( input( "\tinitial angular displacement of the pendulum: " ) )
-        theta_dash = float( input( "\tspeed of the pendulum: " ) ) / length
+        mass = 1.0      # float( input( "Enter the mass of the bob: " ) )
+        length = 2.0    # float( input( "\tlength of the pendulum: " ) )
+        theta = 0       # float( input( "\tinitial angular displacement of the pendulum: " ) )
+        theta_dash = 2.5  # float( input( "\tspeed of the pendulum: " ) ) / length
         theta_double_dash = 0
         color = (250, 0, 120)
         pivot = ( self._width / 2, self._height / 2 )
